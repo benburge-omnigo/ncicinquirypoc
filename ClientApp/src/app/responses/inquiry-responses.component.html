@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+        <th scope="col">Command</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let response of responses">
+        <td>{{response.date}}</td>
+        <td>{{response.status}}</td>
+        <td>{{response.command}}</td>
+      </tr>
+    </tbody>
+  </table>

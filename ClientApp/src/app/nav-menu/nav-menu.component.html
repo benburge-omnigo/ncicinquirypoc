@@ -1,0 +1,80 @@
+<style>
+.cmdbutton {
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+}
+</style>
+
+
+<div class="sidebar-header">
+  <h3>NCIC Commands</h3>
+</div>
+<div>
+  
+  <button (click)="showPerson()" class="cmdbutton">Person</button>
+  <br/>
+  <button (click)="showVehicle()" class="cmdbutton">Vehicle</button>
+  <br/>
+  <button (click)="showProperty()" class="cmdbutton">Property</button>
+
+  <!-- <a [routerLink]="['inquiry/person']"><button class="cmdbutton">Person</button></a>
+  <br/>
+  <a [routerLink]="['inquiry/vehicle']"><button class="cmdbutton">Vehicle</button></a>
+  <br/>
+  <a [routerLink]="['inquiry/property']"><button class="cmdbutton">Property</button></a>
+  <br/>
+  <a [routerLink]="['inquiry/command1']"><button class="cmdbutton">Command 1</button></a>
+  <br/>
+  <a [routerLink]="['inquiry/command2']"><button class="cmdbutton">Command 2</button></a>
+  <br/>
+  <a [routerLink]="['inquiry/command3']"><button class="cmdbutton">Command 3</button></a> -->
+</div>
+
+
+
+
+<!-- <header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">NcicInquiryMicroCore</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/counter']"
+              >Counter</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
+              >Fetch data</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header> -->

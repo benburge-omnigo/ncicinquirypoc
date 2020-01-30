@@ -1,0 +1,31 @@
+<body>
+  
+<style>
+  .wrapper {
+      display: flex;
+      width: 100%;
+      align-items: stretch;
+  }
+</style>
+
+<div class="wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <app-nav-menu></app-nav-menu>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content" class="container">
+      <!-- <router-outlet></router-outlet> -->
+      
+      <inquiry-cmd-component></inquiry-cmd-component>
+
+
+      <inquiry-responses-component></inquiry-responses-component>
+    </div>
+
+</div> 
+
+
+</body>

@@ -1,0 +1,49 @@
+<h1>Inquiry Command ( <strong>{{ commandName }}</strong> )</h1>
+
+    
+    <div class="alert alert-info" role="alert" *ngIf="isRunning">
+        Running inquiry now ...
+    </div>
+
+    
+    <form *ngIf="isPerson">
+        <div class="form-group" >
+          <label for="ln">Last Name</label>
+          <input type="text" class="form-control" id="ln" aria-describedby="ln"/>
+        </div>
+        <div class="form-group">
+            <label for="fn">First Name</label>
+            <input type="text" class="form-control" id="fn" aria-describedby="fn"/>
+        </div>
+        <div class="form-group">
+            <label for="mn">Middle Name</label>
+            <input type="text" class="form-control" id="mn" aria-describedby="mn"/>
+        </div>
+        <button type="submit" (click)="run()" class="btn btn-primary">Run</button>
+    </form>
+    <form *ngIf="isProperty">
+        <div class="form-group" >
+          <label for="ln">Description</label>
+          <input type="text" class="form-control" id="ln" aria-describedby="ln"/>
+        </div>
+        <div class="form-group">
+            <label for="fn">Make</label>
+            <input type="text" class="form-control" id="fn" aria-describedby="fn"/>
+        </div>
+        <div class="form-group">
+            <label for="mn">Serial No</label>
+            <input type="text" class="form-control" id="mn" aria-describedby="mn"/>
+        </div>
+        <button type="submit" (click)="run()" class="btn btn-primary">Run</button>
+    </form>
+    <form *ngIf="isVehicle">
+        <div class="form-group">
+            <label for="fn">VIN</label>
+            <input type="text" class="form-control" id="fn" aria-describedby="fn"/>
+        </div>
+        <div class="form-group">
+            <label for="mn">License plate</label>
+            <input type="text" class="form-control" id="mn" aria-describedby="mn"/>
+        </div>
+        <button type="submit" (click)="run()" class="btn btn-primary">Run</button>
+    </form>
